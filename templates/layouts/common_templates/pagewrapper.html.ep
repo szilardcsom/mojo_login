@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+  	<title>My login app</title>
+  	
+    <link href="common/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">  	
+	</head>
+	<body>
+    <%= content %>
+	</body>
+</html>
