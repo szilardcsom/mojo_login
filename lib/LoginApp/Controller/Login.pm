@@ -1,16 +1,18 @@
 package LoginApp::Controller::Login;
-use Mojo::Base 'Mojolicious::Controller';
+
+use Moo;
+extends 'LoginApp::Controller::MyController';
 
 sub display
 {
   my $self = shift;
 	
-  $self->render(template => 'Login/login', format => 'html', layout => 'common_templates/pagewrapper');	
+  $self->renderTemplate(template => 'Login/login', format => 'html', layout => 'common_templates/pagewrapper');	
 }
 
 sub do_login
-{
-	
+{  
+	my $self = shift;
 }
 
 1;

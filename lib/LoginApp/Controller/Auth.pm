@@ -1,5 +1,4 @@
 package LoginApp::Controller::Auth;
-use Mojo::Base 'Mojolicious::Controller';
 
  sub check 
  {

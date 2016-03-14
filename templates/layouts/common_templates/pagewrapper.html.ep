@@ -4,7 +4,12 @@
 	<meta charset="UTF-8">
   	<title>My login app</title>
   	
-    <link href="common/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">  	
+    <link href="common/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      	
+    <script src="common/js/jquery.js"></script>
+    <script src="common/js/underscore.js"></script>
+    <script src="common/js/backbone.js"></script>
+    <script src="common/js/require.js"></script>
 	</head>
 	<body>
     <%= content %>
