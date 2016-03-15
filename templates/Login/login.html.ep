@@ -2,10 +2,9 @@
 
 var loginPage;
 $(function(){
-	requirejs(["Modules/Login/Login.js"], function(Login) {
+  requirejs(["Modules/Login/Login.js"], function(Login) {
     loginPage = new Login();
-    console.log(loginPage);
-	});
+  });
 });
 
 </script>

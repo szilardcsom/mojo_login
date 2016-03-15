@@ -14,18 +14,18 @@ sub display
 }
 
 sub do_login
-{  
-	my $self = shift;
+{   
+  my $self = shift;
 	
-	my $parameters = $self->getJsonParams();
+  my $parameters = $self->getJsonParams();
 	
-	if ($parameters->{'fbId'}) {
-	 my $user = LoginApp::Model::User->getUserByFBId($parameters->{'fbId'});
+  if ($parameters->{'fbId'}) {
+    my $user = LoginApp::Model::User->getUserByFBId($parameters->{'fbId'});
 	 
-	 warn Data::Dumper::Dumper($user);
-	} else {
-	 die 'No fb id provided, something is not going well';
-	}
+    warn Data::Dumper::Dumper($user);
+  } else {
+    die 'No fb id provided, something is not going well';
+  }
 }
 
 1;
