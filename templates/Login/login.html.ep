@@ -1,7 +1,13 @@
 <script type="text/javascript">
-requirejs(["Modules/Login/Login.js"], function(util) {
-  console.log('Login.js is loaded');
+
+var loginPage;
+$(function(){
+	requirejs(["Modules/Login/Login.js"], function(Login) {
+    loginPage = new Login();
+    console.log(loginPage);
+	});
 });
+
 </script>
 
 <div class="container">  
@@ -16,7 +22,7 @@ requirejs(["Modules/Login/Login.js"], function(util) {
 
           <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
             
-          <form id="loginform" class="form-horizontal" role="form">
+          <form id="loginform" class="form-horizontal" role="form" action="/login">
                 
             <div style="margin-bottom: 25px" class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -137,6 +143,5 @@ requirejs(["Modules/Login/Login.js"], function(util) {
             </form>
            </div>
         </div>
-      
    </div> 
 </div>
